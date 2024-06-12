@@ -41,7 +41,7 @@
 <div>
 	<!-- Header -->
 	<div>
-		<DocsAppBar />
+		<DocsAppBar/>
 	</div>
 	
 	<!-- Sidebar (Left) -->
