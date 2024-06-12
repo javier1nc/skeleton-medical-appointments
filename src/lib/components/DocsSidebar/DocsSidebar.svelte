@@ -25,13 +25,13 @@
 		if (['docs', 'essentials', 'resources', 'integrations'].includes(basePath)) currentRailCategory = '/docs';
 		if (['tokens', 'base', 'elements', 'blocks'].includes(basePath)) currentRailCategory = '/elements';
 		if (['components', 'actions'].includes(basePath)) currentRailCategory = '/svelte';
-		if (['utilities'].includes(basePath)) currentRailCategory = '/utilities';
 	});
 
 	// Reactive
 	$: submenu = menuNavLinks[currentRailCategory ?? '/docs'];
 	$: listboxItemActive = (href: string) => ($page.url.pathname?.includes(href) ? 'bg-primary-active-token' : '');
 </script>
+
 
 <div class="grid grid-cols-[auto_1fr] h-full bg-surface-50-900-token border-r border-surface-500/30 {$$props.class ?? ''}">
 	<!-- App Rail -->
@@ -64,10 +64,6 @@
 		<AppRailTile bind:group={currentRailCategory} name="svelte" value={'/svelte'}>
 			<svelte:fragment slot="lead"><DocsIcon name="mdi:bookmark-multiple" width="w-6" height="h-6" /></svelte:fragment>
 			<span>Svelte</span>
-		</AppRailTile>
-		<AppRailTile bind:group={currentRailCategory} name="utilities" value={'/utilities'}>
-			<svelte:fragment slot="lead"><DocsIcon name="mdi:wrench" width="w-6" height="h-6" /></svelte:fragment>
-			<span>Utilities</span>
 		</AppRailTile>
 	</AppRail>
 	<!-- Nav Links -->
