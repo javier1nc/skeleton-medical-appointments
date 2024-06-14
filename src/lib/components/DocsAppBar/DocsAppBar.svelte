@@ -46,7 +46,7 @@
 		<div class="flex items-center space-x-4">
 			<!-- Hamburger Menu -->
 			<button on:click={drawerOpen} class="btn-icon btn-icon-sm lg:!hidden">
-				<i class="fa-solid fa-bars text-xl"></i>
+				<Icon icon="flowbite:bars-outline" class="text-xl"/>
 			</button>
 			<!-- Logo -->
 			<a class="lg:!ml-0 w-[32px] lg:w-auto overflow-hidden" href="/" title="Go to Homepage">
@@ -60,7 +60,7 @@
 			<!-- trigger -->
 			<button class="btn hover:variant-soft-primary" use:popup={{ event: 'click', target: 'features' }}>
 				<span>Explore</span>
-				<i class="fa-solid fa-caret-down opacity-50"></i>
+				<Icon icon="flowbite:caret-down-solid" class="opacity-50"/>
 			</button>
 			<!-- popup -->
 			<div class="card p-4 w-60 shadow-xl" data-popup="features">
@@ -68,19 +68,25 @@
 					<ul>
 						<li>
 							<a href="/">
-								<span class="w-6 text-center"><i class="fa-solid fa-home"></i></span>
+								<span class="w-6 text-center">
+									<Icon icon="flowbite:home-solid" class="opacity-50"/>
+								</span>
 								<span>Homepage</span>
 							</a>
 						</li>
 						<li>
 							<a href="/docs/get-started">
-								<span class="w-6 text-center"><i class="fa-solid fa-book"></i></span>
+								<span class="w-6 text-center">
+									<Icon icon="flowbite:book-open-solid" class="opacity-50"/>
+								</span>
 								<span>Documentation</span>
 							</a>
 						</li>
 						<li>
 							<a href="/blog">
-								<span class="w-6 text-center"><i class="fa-solid fa-bullhorn"></i></span>
+								<span class="w-6 text-center">
+									<Icon icon="mdi:bullhorn-variant" class="opacity-50"/>
+								</span>
 								<span>Blog</span>
 							</a>
 						</li>
@@ -113,9 +119,9 @@
 		<div>
 			<!-- trigger -->
 			<button class="btn hover:variant-soft-primary" use:popup={{ event: 'click', target: 'theme', closeQuery: 'a[href]' }}>
-				<i class="fa-solid fa-palette text-lg md:!hidden"></i>
+				<Icon icon="flowbite:palette-outline" class="text-lg md:!hidden"/>
 				<span class="hidden md:inline-block">Theme</span>
-				<i class="fa-solid fa-caret-down opacity-50"></i>
+				<Icon icon="flowbite:caret-down-solid" class="opacity-50"/>
 			</button>
 			<!-- popup -->
 			<div class="card p-4 w-60 shadow-xl" data-popup="theme">
@@ -131,7 +137,7 @@
 					<hr />
 					<div>
 						<a class="btn variant-filled w-full" href="/docs/generator">
-							<i class="fa-solid fa-palette"></i>
+							<Icon icon="flowbite:palette-solid" />
 							<span>Create a Theme</span>
 						</a>
 					</div>

@@ -1,9 +1,8 @@
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
 
-<div class="bg-orange-400 container h-full mx-auto flex justify-center items-center">
+<div class="bg-orange-400 container h-scren mx-auto flex justify-center items-center">
 
 	<div class="space-y-5">
-	enen
 		<h1 class="h1">Let's get cracking bones!</h1>
 		<p>Start by exploring:</p>
 		<ul>

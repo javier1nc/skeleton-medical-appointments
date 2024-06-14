@@ -53,17 +53,25 @@
             <DocsSidebar class="hidden lg:grid w-[360px] overflow-hidden" />
         </div>
 
-        <!-- Page Content -->
+        <div class="flex flex-col">
+
+                <!-- Page Content -->
         <div class="content">
             <slot />
         </div>
-    </div>
 
 
-    <!-- Page Footer -->
-    <div class="footer header-footer">
+        <!-- Page Footer -->
+    <div class="header-footer">
         <DocsFooter />
     </div>
+        </div>
+
+
+    </div>
+
+
+
 </div>
 
 <style>
@@ -74,7 +82,7 @@
     }
 
     .header-footer {
-        @apply sticky p-2.5;
+        @apply sticky;
     }
 
     .header {
@@ -90,7 +98,7 @@
     }
 
     .content {
-        @apply grow p-2.5;
+        @apply grow;
     }
 </style>
 

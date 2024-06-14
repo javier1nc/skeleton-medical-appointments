@@ -33,7 +33,7 @@
 </script>
 
 
-<div class="grid grid-cols-[auto_1fr] h-full bg-surface-50-900-token border-r border-surface-500/30 {$$props.class ?? ''}">
+<div class="grid grid-cols-[auto_1fr] h-screen bg-surface-50-900-token border-r border-surface-500/30 {$$props.class ?? ''}">
 	<!-- App Rail -->
 	<AppRail background="bg-transparent" border="border-r border-surface-500/30">
 		<!-- Mobile Only -->
@@ -67,7 +67,7 @@
 		</AppRailTile>
 	</AppRail>
 	<!-- Nav Links -->
-	<section class="p-4 pb-20 space-y-4 overflow-y-auto">
+	<section class="border p-4 pb-20 space-y-4 overflow-y-auto">
 		{#each submenu as segment, i}
 			<!-- Title -->
 			<p class="font-bold pl-4 text-2xl">{segment.title}</p>
