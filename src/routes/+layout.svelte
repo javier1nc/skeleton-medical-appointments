@@ -54,24 +54,17 @@
         </div>
 
         <div class="flex flex-col">
+            <!-- Page Content -->
+            <div class="content">
+                <slot />
+            </div>
 
-                <!-- Page Content -->
-        <div class="content">
-            <slot />
+            <!-- Page Footer -->
+            <div class="header-footer">
+                <DocsFooter />
+            </div>
         </div>
-
-
-        <!-- Page Footer -->
-    <div class="header-footer">
-        <DocsFooter />
     </div>
-        </div>
-
-
-    </div>
-
-
-
 </div>
 
 <style>
