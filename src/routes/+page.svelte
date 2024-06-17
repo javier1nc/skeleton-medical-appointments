@@ -1,16 +1,17 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script lang="ts">
 
-<div class="bg-orange-400 container h-full  mx-auto flex justify-center items-center">
+	// Components
 
-	<div class="space-y-5">
-		<h1 class="h1">Let's get cracking bones!</h1>
-		<p>Start by exploring:</p>
-		<ul>
-			<li><code class="code">/src/routes/+layout.svelte</code> - barebones layout</li>
-			<li><code class="code">/src/app.postcss</code> - app wide css</li>
-			<li>
-				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
-			</li>
-		</ul>
-	</div>
+	// Page Partials
+	import HomeHero from './home-partials/HomeHero.svelte';
+
+</script>
+
+<div class="z-0 container h-full  mx-auto flex flex-col justify-center items-center mb-72">
+
+	<!-- hero -->
+	<header id="hero" class="bg-transparent hero-gradient">
+		<div class="section-container"><HomeHero /></div>
+	</header>
+
 </div>

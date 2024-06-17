@@ -49,11 +49,11 @@
     <!-- Main -->
     <div class="flex">
         <!-- Sidebar (Left) -->
-        <div>
-            <DocsSidebar class="hidden lg:grid w-[360px] overflow-hidden" />
+        <div class="hidden overflow-hidden">
+            <DocsSidebar class="lg:grid w-[360px] " />
         </div>
 
-        <div class="flex flex-col">
+        <div class="w-full flex flex-col">
             <!-- Page Content -->
             <div class="content">
                 <slot />
@@ -64,6 +64,7 @@
                 <DocsFooter />
             </div>
         </div>
+
     </div>
 </div>
 
@@ -75,7 +76,7 @@
     }
 
     .header-footer {
-        @apply sticky;
+        @apply sticky z-40;
     }
 
     .header {

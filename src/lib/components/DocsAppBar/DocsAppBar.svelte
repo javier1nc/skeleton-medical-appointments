@@ -69,7 +69,7 @@
 						<li>
 							<a href="/">
 								<span class="w-6 text-center">
-									<Icon icon="flowbite:home-solid" class="opacity-50"/>
+									<Icon icon="flowbite:home-solid" class="opacity-90"/>
 								</span>
 								<span>Homepage</span>
 							</a>
@@ -77,7 +77,7 @@
 						<li>
 							<a href="/docs/get-started">
 								<span class="w-6 text-center">
-									<Icon icon="flowbite:book-open-solid" class="opacity-50"/>
+									<Icon icon="flowbite:book-open-solid" class="opacity-90"/>
 								</span>
 								<span>Documentation</span>
 							</a>
@@ -85,7 +85,7 @@
 						<li>
 							<a href="/blog">
 								<span class="w-6 text-center">
-									<Icon icon="mdi:bullhorn-variant" class="opacity-50"/>
+									<Icon icon="mdi:bullhorn-variant" class="opacity-90"/>
 								</span>
 								<span>Blog</span>
 							</a>
@@ -99,13 +99,13 @@
 						<hr class="!my-4" />
 						<li>
 							<a href="/elements/core">
-								<span class="w-6 text-center"><DocsIcon name="tailwind" width="w-5" height="h-5" /></span>
+								<span class="w-6 text-center"><DocsIcon name="mdi:tailwind" width="w-5" height="h-5" /></span>
 								<span>Tailwind</span>
 							</a>
 						</li>
 						<li>
 							<a href="/actions/clipboard">
-								<span class="w-6 text-center"><DocsIcon name="svelte" width="w-6" height="h-6" /></span>
+								<span class="w-6 text-center"><DocsIcon name="cib:svelte" width="w-6" height="h-6" /></span>
 								<span>Svelte</span>
 							</a>
 						</li>
@@ -161,19 +161,25 @@
 						<ul>
 							<li>
 								<a href="https://github.com/sponsors/skeletonlabs" target="_blank" rel="noreferrer">
-									<span class="w-6 text-center"><i class="fa-brands fa-github"></i></span>
+									<span class="w-6 text-center">
+										<Icon icon="mdi:github" class="text-xl"/>
+									</span>
 									<span>GitHub</span>
 								</a>
 							</li>
 							<li>
 								<a href="https://ko-fi.com/skeletonlabs" target="_blank" rel="noreferrer">
-									<span class="w-6 text-center"><i class="fa-solid fa-mug-saucer"></i></span>
+									<span class="w-6 text-center">
+										<Icon icon="line-md:coffee-filled" class="text-xl"/>
+									</span>
 									<span>Ko-Fi</span>
 								</a>
 							</li>
 							<li>
 								<a href="https://patreon.com/user?u=83786276" target="_blank" rel="noreferrer">
-									<span class="w-6 text-center"><i class="fa-brands fa-patreon"></i></span>
+									<span class="w-6 text-center">
+										<Icon icon="ph:patreon-logo-fill" class="text-xl"/>
+									</span>
 									<span>Patreon</span>
 								</a>
 							</li>
@@ -206,7 +212,9 @@
 						<li>
 							<a href="https://v1.skeleton.dev/" target="_blank">
 								<span>Skeleton v1 Docs</span>
-								<span class="w-6 text-center"><i class="fa-solid fa-arrow-up-right-from-square opacity-50"></i></span>
+								<span class="w-6 text-center">
+									<Icon icon="flowbite:arrow-up-right-from-square-outline" class="text-xl opacity-50" />
+								</span>
 							</a>
 						</li>
 					</ul>
