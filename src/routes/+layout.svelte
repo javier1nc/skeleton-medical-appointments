@@ -60,7 +60,7 @@
             </div>
 
             <!-- Page Footer -->
-            <div class="header-footer">
+            <div class="header-footer ">
                 <DocsFooter />
             </div>
         </div>
@@ -69,22 +69,16 @@
 </div>
 
 <style>
-
-
     .page {
         @apply h-screen flex flex-col;
     }
 
     .header-footer {
-        @apply sticky z-40;
+        @apply sticky;
     }
 
     .header {
-        @apply h-screen flex flex-col;
-    }
-
-    .header {
-        @apply top-0;
+        @apply h-screen flex flex-col top-0 z-40;
     }
 
     .footer {
