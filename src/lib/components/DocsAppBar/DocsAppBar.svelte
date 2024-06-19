@@ -290,7 +290,7 @@
 		<!-- Search -->
 		<div class="md:inline md:ml-4">
 			<button class="btn space-x-4 variant-soft hover:variant-soft-primary" on:click={triggerSearch}>
-				<i class="fa-solid fa-magnifying-glass text-sm"></i>
+				<Icon icon="fa6-solid:magnifying-glass" class="text-sm"/>
 				<small class="hidden md:inline-block">{isOsMac ? '⌘' : 'Ctrl'}+K</small>
 			</button>
 		</div>
