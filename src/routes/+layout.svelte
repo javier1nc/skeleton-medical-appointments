@@ -22,6 +22,12 @@
 
     storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
+
+    // Types
+	import type { ModalComponent } from '@skeletonlabs/skeleton';
+
+
+
 	// Components & Utilities
 	import { Modal, Toast, initializeStores, prefersReducedMotionStore } from '@skeletonlabs/skeleton';
 	initializeStores();
