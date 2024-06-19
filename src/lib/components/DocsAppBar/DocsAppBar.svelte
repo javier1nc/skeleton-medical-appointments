@@ -38,6 +38,7 @@
 
     // Search
     function triggerSearch(): void {
+		console.log("::triggerSearch::");
         const modal: ModalSettings = {
             type: 'component',
             component: 'modalSearch',

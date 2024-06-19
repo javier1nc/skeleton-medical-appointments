@@ -22,10 +22,9 @@
 
     storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
-    // Components & Utilities
-    import { Modal, Toast, initializeStores, prefersReducedMotionStore } from '@skeletonlabs/skeleton';
-
-    initializeStores();
+	// Components & Utilities
+	import { Modal, Toast, initializeStores, prefersReducedMotionStore } from '@skeletonlabs/skeleton';
+	initializeStores();
 
     // Docs Components
     import DocsAppBar from '$lib/components/DocsAppBar/DocsAppBar.svelte';
@@ -36,6 +35,7 @@
 </script>
 
 <!-- Overlays -->
+<Modal />
 <Toast />
 <DocsDrawer />
 
