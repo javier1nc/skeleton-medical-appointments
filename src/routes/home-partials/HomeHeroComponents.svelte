@@ -38,7 +38,7 @@
 	<div class="anim-float-card absolute z-[1] top-[60%] left-[65%]">
 		<a class="block card card-hover p-4 space-y-2" href="https://twitter.com/SkeletonUI" target="_blank" rel="noreferrer">
 			<div class="flex items-center gap-4">
-				<Avatar src="https://pbs.twimg.com/profile_images/1587479781544759297/TINbbJLC_400x400.png" width="w-16" />
+				<Avatar src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Cargobase_logo_square_400x400.png" width="w-16" />
 				<div>
 					<p class="font-bold">Skeleton</p>
 					<small class="opacity-50">@SkeletonUI</small>
