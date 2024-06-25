@@ -22,11 +22,8 @@
 
     storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
-
     // Types
 	import type { ModalComponent } from '@skeletonlabs/skeleton';
-
-
 
 	// Components & Utilities
 	import { Modal, Toast, initializeStores, prefersReducedMotionStore } from '@skeletonlabs/skeleton';
@@ -37,11 +34,29 @@
     import DocsSidebar from '$lib/components/DocsSidebar/DocsSidebar.svelte';
     import DocsDrawer from '$lib/components/DocsDrawer/DocsDrawer.svelte';
     import DocsFooter from '$lib/components/DocsFooter/DocsFooter.svelte';
+    // Modal Components
+	import DocsSearch from '$lib/modals/DocsSearch/DocsSearch.svelte';
+    import ModalExampleList from '$lib/modals/examples/ModalExampleList.svelte';
+	import ModalExampleEmbed from '$lib/modals/examples/ModalExampleEmbed.svelte';
+	import ModalExampleImage from '$lib/modals/examples/ModalExampleImage.svelte';
+	import ModalExampleFullscreen from '$lib/modals/examples/ModalExampleFullscreen.svelte';
+
+
+    // Registered list of Components for Modals
+	const modalComponentRegistry: Record<string, ModalComponent> = {
+        modalSearch: { ref: DocsSearch },
+		exampleList: { ref: ModalExampleList },
+		exampleEmbed: { ref: ModalExampleEmbed },
+		exampleImage: { ref: ModalExampleImage },
+		fullScreen: { ref: ModalExampleFullscreen }
+	};
+
+
 
 </script>
 
 <!-- Overlays -->
-<Modal />
+<Modal components={modalComponentRegistry} />
 <Toast />
 <DocsDrawer />
 
@@ -55,7 +70,7 @@
     <!-- Main -->
     <div class="flex">
         <!-- Sidebar (Left) -->
-        <div class="hidden overflow-hidden">
+        <div class=""> <!-- "hidden overflow-hidden" -->
             <DocsSidebar class="lg:grid w-[360px] " />
         </div>
 
